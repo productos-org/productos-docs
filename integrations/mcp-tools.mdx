@@ -1,12 +1,19 @@
 ---
 title: "MCP tools reference"
-description: "Every tool the ProductOS MCP server exposes to connected AI clients — 58 tools across files, shell, skills, sandboxes, databases, deployments, browser automation, mobile publishing, and multi-surface Product orchestration."
+description: "Reference for all 58 ProductOS MCP server tools: files, shell, skills, sandboxes, databases, deployments, browser automation, and mobile publishing."
 sidebarTitle: "Tools reference"
+timestamp: true
 ---
 
-The ProductOS MCP server exposes your entire project — not just its context — to any MCP client such as Claude, ChatGPT, Cursor, Windsurf, or VS Code. Beyond reading your PRD, research, and designs, a connected agent gets the full project sandbox: files, a shell, reusable skills, sandbox lifecycle, databases and storage, GitHub sync, deployments, a headless browser, mobile publishing, and multi-surface Product orchestration — **58 tools in total**.
+<sub>Maintained by the ProductOS team · Last updated October 23, 2026</sub>
 
-Every tool is project-scoped and permission-gated. A connection carries one or more scopes, and each tool requires at least one:
+## What does the ProductOS MCP server expose?
+
+The ProductOS MCP server gives any MCP client, such as Claude, ChatGPT, Cursor, Windsurf, or VS Code, access to your whole ProductOS project: its PRD, research, and designs, plus the project sandbox with files, a shell, skills, databases, GitHub sync, deployments, a headless browser, mobile publishing, and multi-surface Product orchestration. That is **58 tools in total**.
+
+## How are MCP tool permissions scoped?
+
+Every tool is project-scoped and permission-gated. A connection carries one or more scopes, and each tool requires at least one. A `project:read` connection can only read; `project:write` adds tools that change files, projects, and deployments; `project:exec` adds the shell and the headless browser.
 
 | Scope | Grants |
 | --- | --- |
@@ -167,7 +174,7 @@ A Product groups several platform surfaces (web, mobile, website) that share one
 | `manage_product` | write | Create or steer a Product: provision the shared database and build the web, mobile, and website surfaces |
 | `product_agent` | read / write | Read and drive the ProductOS orchestrator that plans, freezes the contract, and dispatches per-surface builds |
 
-## Connecting
+## How do I connect an MCP client to ProductOS?
 
 Connect the ProductOS MCP server to any client over OAuth: paste the endpoint, sign in, and choose which project or organization the connection can reach and at what scope. See the client walkthroughs for [Cursor](/integrations/cursor) and [Claude](/integrations/claude), or the [MCP overview](/integrations/mcp) for how the protocol fits into ProductOS.
 
