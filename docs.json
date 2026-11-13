@@ -179,6 +179,11 @@
       "youtube": "https://youtube.com/@productosdotdev"
     }
   },
+  "seo": {
+    "metatags": {
+      "canonical": "https://productos.dev"
+    }
+  },
   "redirects": [
     {
       "source": "/getting-started/plans-and-credits",
