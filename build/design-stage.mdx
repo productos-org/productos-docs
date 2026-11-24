@@ -18,10 +18,10 @@ Design is the fourth stage of the Build pipeline. It turns the approved spec int
 Three agents share the stage:
 
 - **The [Orchestrator](/agents/orchestrator)** runs brand setup in automatic mode, generating the brand palette, font pairing, and vibe report for the project.
-- **The [Design Agent](/agents/design)** reads everything the earlier stages produced, the concept, the research, and the PRD, and turns it into user flows and screen specifications. It keeps your workspace in sync as it works, switching the active design tab as it moves through brand, flows, and screens.
-- **The [Design System Agent](/agents/design-system)** is a senior visual designer benchmarked against Linear, Vercel, Stripe, Notion, and Apple's Human Interface Guidelines. From the locked brand it builds the design tokens, the component system, and `DESIGN.md`, then renders dark and light previews so you can judge the system before a line of product code exists. Its own brief for taste: "Restraint over flourish. Personality you can name."
+- **The [Product Designer](/agents/design)** reads everything the earlier stages produced, the concept, the research, and the PRD, and turns it into user flows and screen specifications. It keeps your workspace in sync as it works, switching the active design tab as it moves through brand, flows, and screens.
+- **The [Design Systems Lead](/agents/design-system)** is a senior visual designer benchmarked against Linear, Vercel, Stripe, Notion, and Apple's Human Interface Guidelines. From the locked brand it builds the design tokens, the component system, and `DESIGN.md`, then renders dark and light previews so you can judge the system before a line of product code exists. Its own brief for taste: "Restraint over flourish. Personality you can name."
 
-The [Fullstack Builder](/agents/fullstack-builder) also appears in this stage under the Frontend Engineer label, running live Next.js builds in the Design Builder tab.
+The [Full-Stack Engineer](/agents/fullstack-builder) also appears in this stage under the Frontend Engineer label, running live Next.js builds in the Design Builder tab.
 
 ## What it reads
 
@@ -41,6 +41,6 @@ The design system's tokens are the source for every downstream build agent. This
 
 ## What happens next
 
-With flows, screen specs, and `DESIGN.md` locked, the Orchestrator proposes the transition to Develop. The [Fullstack Builder](/agents/fullstack-builder) consumes the design tokens and the PRD and writes the actual codebase, screen for screen.
+With flows, screen specs, and `DESIGN.md` locked, the Orchestrator proposes the transition to Develop. The [Full-Stack Engineer](/agents/fullstack-builder) consumes the design tokens and the PRD and writes the actual codebase, screen for screen.
 
 Continue to [Develop](/build/develop-stage).

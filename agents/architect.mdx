@@ -1,11 +1,11 @@
 ---
-title: "Architect Agent"
+title: "Software Architect"
 description: "An optional system design specialist that turns your PRD into architecture documents, decision records, and infrastructure cost estimates."
 ---
 
-The Architect Agent is the optional technical deep-dive inside the Define stage. Its system prompt describes it as "a system design and technical architecture specialist." From the PRD and your locked constraints it produces real architecture documents across eight sections: system overview, container architecture, database and API design, deployment and security architecture, design patterns, and technical risks.
+The Software Architect is the optional technical deep-dive inside the Define stage. Its system prompt describes it as "a system design and technical architecture specialist." From the PRD and your locked constraints it produces real architecture documents across eight sections: system overview, container architecture, database and API design, deployment and security architecture, design patterns, and technical risks.
 
-It records architecture decisions as ADRs and can estimate infrastructure cost, so the build that follows starts from decisions, not defaults. One boundary worth knowing: it designs the system; it does not write the app code. Implementation belongs to the [Fullstack Builder](/agents/fullstack-builder).
+It records architecture decisions as ADRs and can estimate infrastructure cost, so the build that follows starts from decisions, not defaults. One boundary worth knowing: it designs the system; it does not write the app code. Implementation belongs to the [Full-Stack Engineer](/agents/fullstack-builder).
 
 ## Tools
 
@@ -24,7 +24,7 @@ It records architecture decisions as ADRs and can estimate infrastructure cost, 
 
 ## Where it sits in the pipeline
 
-The Architect Agent lives inside Stage 3, Define, alongside the [PRD Agent](/agents/prd), and it is optional: projects that do not need a formal architecture pass skip it entirely. When you do run it, the [Orchestrator](/agents/orchestrator) scaffolds the architecture outline with `setup_architecture_outline` and delegates sections the same way it does for the PRD. From there the pipeline continues into Stage 4 with the [Design Agent](/agents/design).
+The Software Architect lives inside Stage 3, Define, alongside the [Product Manager](/agents/prd), and it is optional: projects that do not need a formal architecture pass skip it entirely. When you do run it, the [Orchestrator](/agents/orchestrator) scaffolds the architecture outline with `setup_architecture_outline` and delegates sections the same way it does for the PRD. From there the pipeline continues into Stage 4 with the [Product Designer](/agents/design).
 
 ## When to use it
 

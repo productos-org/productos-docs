@@ -12,7 +12,7 @@ Define is the third stage of the Build pipeline. It translates the concept and t
 
 ## Who runs it
 
-The [PRD Agent](/agents/prd). Its defining rule, from its own system prompt: "Every section you write must be grounded in the prior stages' artifacts, not invented from scratch." Because it writes against the actual ideation and research records, every requirement traces back to evidence. When a section needs a fact it does not have, it consults the Research or Ideation Agent directly, or fills small factual gaps with a web search, rather than guessing.
+The [Product Manager](/agents/prd). Its defining rule, from its own system prompt: "Every section you write must be grounded in the prior stages' artifacts, not invented from scratch." Because it writes against the actual ideation and research records, every requirement traces back to evidence. When a section needs a fact it does not have, it consults the Research or Product Strategist directly, or fills small factual gaps with a web search, rather than guessing.
 
 ## The outline-approval gate
 
@@ -26,7 +26,7 @@ The document is not generated in one shot. The flow is:
     The outline is the contract for the document. Nothing gets written until the structure is right, so reshaping the doc costs a conversation, not a rewrite.
   </Step>
   <Step title="Section-by-section writing">
-    The PRD Agent writes one section per delegation, loading the project's locked constraints before writing each one.
+    The Product Manager writes one section per delegation, loading the project's locked constraints before writing each one.
   </Step>
 </Steps>
 
@@ -53,11 +53,11 @@ The document is not generated in one shot. The flow is:
 - **Use revision mode for changes.** After approval, the agent makes targeted edits instead of regenerating, so an approved spec stays approved and your review effort is not thrown away.
 
 <Tip>
-If your product has real technical complexity, run the optional [Architecture](/build/architecture) sub-phase inside Define before moving on. The Architect Agent turns the PRD into system design documents and ADRs.
+If your product has real technical complexity, run the optional [Architecture](/build/architecture) sub-phase inside Define before moving on. The Software Architect turns the PRD into system design documents and ADRs.
 </Tip>
 
 ## What happens next
 
-With the PRD approved (and architecture documented, if you opted in), the Orchestrator proposes the transition to Design. The [Design Agent](/agents/design) reads the concept, the research, and the PRD, and designs the product you actually defined.
+With the PRD approved (and architecture documented, if you opted in), the Orchestrator proposes the transition to Design. The [Product Designer](/agents/design) reads the concept, the research, and the PRD, and designs the product you actually defined.
 
 Continue to [Architecture](/build/architecture) or skip ahead to [Design](/build/design-stage).

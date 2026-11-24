@@ -3,7 +3,7 @@ title: "Deployments and domains"
 description: "How ProductOS ships your app: sandbox previews while you build, then a self-checking deploy to a live URL or your own custom domain."
 ---
 
-Your app is visible from the first file written and shippable whenever you decide it is ready. Two mechanisms make that work: sandbox previews during development, and the Deploy Agent when you want to go live.
+Your app is visible from the first file written and shippable whenever you decide it is ready. Two mechanisms make that work: sandbox previews during development, and the DevOps Engineer when you want to go live.
 
 ## Live previews while you build
 
@@ -11,7 +11,7 @@ Every project runs in an isolated cloud sandbox with a live preview URL. As agen
 
 ## Deploying
 
-Deploy is an on-demand action, not a pipeline stage: trigger it whenever you want, as often as you want. When you do, the Deploy Agent runs a sequence designed to ship a working app, not just push files:
+Deploy is an on-demand action, not a pipeline stage: trigger it whenever you want, as often as you want. When you do, the DevOps Engineer runs a sequence designed to ship a working app, not just push files:
 
 <Steps>
   <Step title="Check recent deploys">
@@ -31,7 +31,7 @@ Deploy is an on-demand action, not a pipeline stage: trigger it whenever you wan
 If the build or deploy fails, the agent does not just report the error: it attempts to fix the problem itself, with up to 3 self-fix iterations before it hands the issue back to you.
 
 <Tip>
-  Run [QA](/build/qa) before deploying. The QA Agent tests your app in a real headless browser and returns a pass, partial, or fail verdict, and a fail can chain into an auto-fix run.
+  Run [QA](/build/qa) before deploying. The QA Engineer tests your app in a real headless browser and returns a pass, partial, or fail verdict, and a fail can chain into an auto-fix run.
 </Tip>
 
 ## Domains
@@ -51,6 +51,6 @@ All ProductOS deployments target Vercel, and your code always flows through your
 
 ## Related pages
 
-- [Deploy Agent](/agents/deploy): the agent behind the deploy action
+- [DevOps Engineer](/agents/deploy): the agent behind the deploy action
 - [Sandboxes](/code/sandboxes): how the development environment works
 - [Security and data](/platform/security-and-data): isolation and data handling

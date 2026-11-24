@@ -9,7 +9,7 @@ ProductOS rests on three ideas. Understand them and everything else in these doc
 
 Every project has one context that all agents read from and write to. Your idea, the ideation transcript, research findings, the PRD, architecture decisions, and design specs accumulate in one place instead of being scattered across tools.
 
-This is the difference between ProductOS and a collection of point tools. When the PRD Agent writes a requirements section, it cites the Research Agent's findings. When the Fullstack Builder writes code, it builds against the Design Agent's screen specs. You never paste context from one stage into the next; the pipeline carries it.
+This is the difference between ProductOS and a collection of point tools. When the Product Manager writes a requirements section, it cites the Product Researcher's findings. When the Full-Stack Engineer writes code, it builds against the Product Designer's screen specs. You never paste context from one stage into the next; the pipeline carries it.
 
 The shared context is also portable: it is available in Cursor and Claude over [MCP](/integrations/mcp), so external tools can build against the same PRD, research, and designs.
 
@@ -44,9 +44,9 @@ Agents and stages are related but not the same thing:
 - A **stage** is a phase of the project with a defined output (research findings, a PRD, screen specs, working code).
 - An **agent** is a specialist that does work, usually within one stage.
 
-The **Orchestrator** sits above both. It routes all work, is the only agent that talks to you, and proposes stage transitions. Every other agent is a specialist it delegates to: the Ideation Agent in Ideation, the Research Agent in Research, the PRD and Architect Agents in Define, the Design and Design System Agents in Design, and the Fullstack Builder in Develop (labeled "Frontend Engineer" when it works in the Design stage).
+The **Orchestrator** sits above both. It routes all work, is the only agent that talks to you, and proposes stage transitions. Every other agent is a specialist it delegates to: the Product Strategist in Ideation, the Product Researcher in Research, the Product Manager and Software Architect in Define, the Product Designer and Design Systems Lead in Design, and the Full-Stack Engineer in Develop (labeled "Frontend Engineer" when it works in the Design stage).
 
-The QA Agent and Deploy Agent map to the on-demand actions rather than stages: they can be invoked whenever there is something to test or ship.
+The QA Engineer and DevOps Engineer map to the on-demand actions rather than stages: they can be invoked whenever there is something to test or ship.
 
 See the [agents overview](/agents/overview) for the full roster and what each specialist does.
 

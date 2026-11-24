@@ -1,9 +1,9 @@
 ---
-title: "Design System Agent"
+title: "Design Systems Lead"
 description: "A senior visual designer that builds your design tokens, component system, and DESIGN.md, with real dark and light HTML previews."
 ---
 
-The Design System Agent is a senior visual designer that crafts cohesive, production-ready design systems benchmarked against Linear, Vercel, Stripe, Notion, and Apple's Human Interface Guidelines. Its system prompt captures the sensibility: "Restraint over flourish. Personality you can name."
+The Design Systems Lead is a senior visual designer that crafts cohesive, production-ready design systems benchmarked against Linear, Vercel, Stripe, Notion, and Apple's Human Interface Guidelines. Its system prompt captures the sensibility: "Restraint over flourish. Personality you can name."
 
 From your locked brand it builds the canonical design tokens, the component system, and a DESIGN.md brief. It renders real dark and light HTML previews of the system before any product code exists, and its output is the token source every downstream build agent works from. This is why shipped ProductOS products look designed rather than generated.
 
@@ -23,12 +23,12 @@ From your locked brand it builds the canonical design tokens, the component syst
 
 ## Where it sits in the pipeline
 
-The Design System Agent works in Stage 4, Design, alongside the [Design Agent](/agents/design). The division of labor: the Design Agent owns user flows and screen specifications, this agent owns the visual system underneath them, and the Design Agent hands token and component work over via `ask_agent`. Downstream, the [Fullstack Builder](/agents/fullstack-builder) implements every screen on the tokens locked in DESIGN.md, so what this agent decides is what your shipped product looks like.
+The Design Systems Lead works in Stage 4, Design, alongside the [Product Designer](/agents/design). The division of labor: the Product Designer owns user flows and screen specifications, this agent owns the visual system underneath them, and the Product Designer hands token and component work over via `ask_agent`. Downstream, the [Full-Stack Engineer](/agents/fullstack-builder) implements every screen on the tokens locked in DESIGN.md, so what this agent decides is what your shipped product looks like.
 
 ## Working with it
 
 Its inputs are entirely visual and brand-side: locked brand guidelines, uploaded assets, the mood board, the vibe report, and any personality notes in the PRD. The more real material it has, the less generic the system.
 
 <Tip>
-Review the dark and light previews before moving to Develop. They are real rendered HTML, not mockups, and they exist precisely so you can judge the system before any product code depends on it. Requesting token changes at this point means a surgical `patch_design_brief` edit; requesting them after the Fullstack Builder has implemented twenty screens on those tokens means rework.
+Review the dark and light previews before moving to Develop. They are real rendered HTML, not mockups, and they exist precisely so you can judge the system before any product code depends on it. Requesting token changes at this point means a surgical `patch_design_brief` edit; requesting them after the Full-Stack Engineer has implemented twenty screens on those tokens means rework.
 </Tip>
