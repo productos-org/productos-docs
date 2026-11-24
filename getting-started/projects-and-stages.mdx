@@ -9,15 +9,15 @@ A project is the unit of work in ProductOS. It holds the shared context (idea, r
 
 ### Ideation
 
-You brief the Orchestrator on your idea, and the Ideation Agent takes over as a Socratic questioner. Rather than agreeing with everything, it probes the idea, logs your assumptions explicitly, and maintains a list of open questions. The output is a sharper idea and an honest record of what you do not yet know.
+You brief the Orchestrator on your idea, and the Product Strategist takes over as a Socratic questioner. Rather than agreeing with everything, it probes the idea, logs your assumptions explicitly, and maintains a list of open questions. The output is a sharper idea and an honest record of what you do not yet know.
 
 ### Research (Discover)
 
-The Research Agent turns open questions into cited findings. It draws on multiple sources: web search via Exa, Reddit, G2 and Trustpilot reviews, app stores, and GitHub, and it can run surveys. Because findings land in the shared project context, every later stage builds on them.
+The Product Researcher turns open questions into cited findings. It draws on multiple sources: web search via Exa, Reddit, G2 and Trustpilot reviews, app stores, and GitHub, and it can run surveys. Because findings land in the shared project context, every later stage builds on them.
 
 ### PRD / Define
 
-The PRD Agent writes the product requirements document, but only after you approve its outline. It then drafts section by section. Four templates are available:
+The Product Manager writes the product requirements document, but only after you approve its outline. It then drafts section by section. Four templates are available:
 
 | Template | Sections |
 | --- | --- |
@@ -26,15 +26,15 @@ The PRD Agent writes the product requirements document, but only after you appro
 | Lean | 6 |
 | Enterprise/Regulated | 12 |
 
-Optionally, the Architect Agent extends the Define stage with 8 architecture sections, architecture decision records (ADRs), and infra cost estimates.
+Optionally, the Software Architect extends the Define stage with 8 architecture sections, architecture decision records (ADRs), and infra cost estimates.
 
 ### Design
 
-Two agents share this stage. The Design Agent produces user flows and screen specs. The Design System Agent generates design tokens, a DESIGN.md, and HTML previews in both dark and light themes. Together they give the build stage a concrete, reviewable visual target before any application code is written.
+Two agents share this stage. The Product Designer produces user flows and screen specs. The Design Systems Lead generates design tokens, a DESIGN.md, and HTML previews in both dark and light themes. Together they give the build stage a concrete, reviewable visual target before any application code is written.
 
 ### Develop
 
-The Fullstack Builder, a real coding agent, works headlessly inside your project's sandbox. Code appears in a live preview as it is written, and it syncs continuously to your own GitHub repository. See [Code ownership](/platform/code-ownership).
+The Full-Stack Engineer, a real coding agent, works headlessly inside your project's sandbox. Code appears in a live preview as it is written, and it syncs continuously to your own GitHub repository. See [Code ownership](/platform/code-ownership).
 
 ## QA and Deploy: actions, not stages
 

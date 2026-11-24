@@ -15,14 +15,14 @@ Each stage's output becomes the next stage's input. The PRD is written against y
 
 | Stage | What it produces | Agent |
 |-------|------------------|-------|
-| 1. Ideate | Concept brief: problem, target user, assumptions, open questions | [Ideation Agent](/agents/ideation) |
-| 2. Discover | Sourced findings, competitor registry, research documents | [Research Agent](/agents/research) |
-| 3. Define | The PRD, section by section behind an outline-approval gate | [PRD Agent](/agents/prd) |
-| 3b. Architecture (optional) | Architecture sections, ADRs, infrastructure cost estimates | [Architect Agent](/agents/architect) |
-| 4. Design | Brand, user flows, screen specs, the design system | [Design Agent](/agents/design), [Design System Agent](/agents/design-system) |
-| 5. Develop | The application codebase, with a live preview in the sandbox | [Fullstack Builder](/agents/fullstack-builder) |
+| 1. Ideate | Concept brief: problem, target user, assumptions, open questions | [Product Strategist](/agents/ideation) |
+| 2. Discover | Sourced findings, competitor registry, research documents | [Product Researcher](/agents/research) |
+| 3. Define | The PRD, section by section behind an outline-approval gate | [Product Manager](/agents/prd) |
+| 3b. Architecture (optional) | Architecture sections, ADRs, infrastructure cost estimates | [Software Architect](/agents/architect) |
+| 4. Design | Brand, user flows, screen specs, the design system | [Product Designer](/agents/design), [Design Systems Lead](/agents/design-system) |
+| 5. Develop | The application codebase, with a live preview in the sandbox | [Full-Stack Engineer](/agents/fullstack-builder) |
 
-QA and Deploy are not stages; they are on-demand actions you can trigger whenever there is something to test or ship. The [QA Agent](/agents/qa) drives a real browser against your app and returns a verdict; the [Deploy Agent](/agents/deploy) takes the project from the sandbox to a live URL.
+QA and Deploy are not stages; they are on-demand actions you can trigger whenever there is something to test or ship. The [QA Engineer](/agents/qa) drives a real browser against your app and returns a verdict; the [DevOps Engineer](/agents/deploy) takes the project from the sandbox to a live URL.
 
 <Note>
 Stage transitions are proposed, not automatic. When a stage's work is done, the Orchestrator proposes the move; you confirm it. Telling it to move on is consent to advance.

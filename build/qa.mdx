@@ -7,7 +7,7 @@ QA is an on-demand action, not a pipeline stage. Run it whenever there is someth
 
 ## Who runs it
 
-The [QA Agent](/agents/qa). It is not a linter or a static analyzer; it drives a real headless Chromium browser (via Browserbase/Steel with Stagehand) against your app's live preview URL, clicking, typing, and asserting like a user would, and it screenshots after every action so each finding comes with visual evidence.
+The [QA Engineer](/agents/qa). It is not a linter or a static analyzer; it drives a real headless Chromium browser (via Browserbase/Steel with Stagehand) against your app's live preview URL, clicking, typing, and asserting like a user would, and it screenshots after every action so each finding comes with visual evidence.
 
 ## What it tests
 
@@ -40,7 +40,7 @@ The verdict comes with a report of severity-ranked findings, each backed by scre
 
 ## Auto-fix chaining
 
-A fail does not have to land on your desk as a bug list. The findings can chain straight into an automated fix run: the [Fullstack Builder](/agents/fullstack-builder) receives a targeted fix task generated from the QA report (`delegate_to_develop_fix`), applies the fixes in the sandbox, and you can run QA again to confirm. The loop is test, fix, retest, without you triaging bug reports in between.
+A fail does not have to land on your desk as a bug list. The findings can chain straight into an automated fix run: the [Full-Stack Engineer](/agents/fullstack-builder) receives a targeted fix task generated from the QA report (`delegate_to_develop_fix`), applies the fixes in the sandbox, and you can run QA again to confirm. The loop is test, fix, retest, without you triaging bug reports in between.
 
 ## How you steer it
 
@@ -49,7 +49,7 @@ A fail does not have to land on your desk as a bug list. The findings can chain 
 - **Decide what a partial means for you.** Severity-ranked findings let you choose between chaining an auto-fix, cherry-picking what matters, or shipping anyway.
 
 <Tip>
-A QA pass immediately before deploying is cheap insurance: the [Deploy Agent](/agents/deploy) verifies that the build compiles, but QA is what verifies that the product behaves.
+A QA pass immediately before deploying is cheap insurance: the [DevOps Engineer](/agents/deploy) verifies that the build compiles, but QA is what verifies that the product behaves.
 </Tip>
 
 ## What happens next

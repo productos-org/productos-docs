@@ -13,7 +13,7 @@ Develop is the fifth stage of the Build pipeline: implementation. A real coding 
 
 ## Who runs it
 
-The [Fullstack Builder](/agents/fullstack-builder). It is not a code generator that returns a blob of files; it is a full coding agent with the complete sandbox toolset, reading, writing, and editing files and running shell commands, iterating the way an engineer does. In the Design stage the same agent appears as the Frontend Engineer; in Develop it builds the whole stack.
+The [Full-Stack Engineer](/agents/fullstack-builder). It is not a code generator that returns a blob of files; it is a full coding agent with the complete sandbox toolset, reading, writing, and editing files and running shell commands, iterating the way an engineer does. In the Design stage the same agent appears as the Frontend Engineer; in Develop it builds the whole stack.
 
 One rule shapes the whole system here: the Orchestrator is forbidden from writing code itself. As its prompt puts it, "Code belongs to the Develop sub-agent." Every implementation task is delegated to the builder.
 
@@ -25,11 +25,11 @@ Long-running build tasks execute as durable background jobs, broken into checkpo
 - The PRD from [Define](/build/prd), plus architecture documents if you ran that sub-phase
 - The concrete build task delegated by the Orchestrator
 
-Because it consumes the locked tokens and the actual spec, the code implements the product you specified, screen for screen, on the design system your Design System Agent locked, not on framework defaults.
+Because it consumes the locked tokens and the actual spec, the code implements the product you specified, screen for screen, on the design system your Design Systems Lead locked, not on framework defaults.
 
 ## The sandbox and live preview
 
-Every project runs in an isolated cloud sandbox with a live preview URL. You watch the app take shape as the builder works, and the same preview URL is what the [QA Agent](/agents/qa) later drives a real browser against.
+Every project runs in an isolated cloud sandbox with a live preview URL. You watch the app take shape as the builder works, and the same preview URL is what the [QA Engineer](/agents/qa) later drives a real browser against.
 
 ## How you steer it
 

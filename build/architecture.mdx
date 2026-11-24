@@ -13,7 +13,7 @@ Architecture is an optional sub-phase inside the Define stage. Not every project
 
 ## Who runs it
 
-The [Architect Agent](/agents/architect), a system design and technical architecture specialist. One boundary matters: it designs the system; it does not write the app code. Implementation belongs to the [Fullstack Builder](/agents/fullstack-builder) in the Develop stage.
+The [Software Architect](/agents/architect), a system design and technical architecture specialist. One boundary matters: it designs the system; it does not write the app code. Implementation belongs to the [Full-Stack Engineer](/agents/fullstack-builder) in the Develop stage.
 
 Like the PRD, the architecture document is written behind an outline: the Orchestrator scaffolds the architecture outline, then delegates one section per call (`write_architecture_section`). Before writing, the agent loads your locked constraints, so the design respects tech-stack facts you have already fixed rather than reinventing them.
 
@@ -30,11 +30,11 @@ Like the PRD, the architecture document is written behind an outline: the Orches
 - **Ask for the cost estimate early.** `estimate_infrastructure_cost` projects what the proposed architecture costs to run, and it is cheaper to change an architecture on paper than in production.
 
 <Note>
-Skipping this sub-phase does not mean the build is unplanned; the Fullstack Builder still works from the PRD and the design system. It means the technical decisions are made during implementation instead of being documented ahead of it.
+Skipping this sub-phase does not mean the build is unplanned; the Full-Stack Engineer still works from the PRD and the design system. It means the technical decisions are made during implementation instead of being documented ahead of it.
 </Note>
 
 ## What happens next
 
-Architecture wraps up the Define stage. The Orchestrator proposes the transition to Design, where the [Design Agent](/agents/design) and [Design System Agent](/agents/design-system) turn the spec into flows, screens, and a token system, and the architecture documents remain in the project context for the Develop stage to build against.
+Architecture wraps up the Define stage. The Orchestrator proposes the transition to Design, where the [Product Designer](/agents/design) and [Design Systems Lead](/agents/design-system) turn the spec into flows, screens, and a token system, and the architecture documents remain in the project context for the Develop stage to build against.
 
 Continue to [Design](/build/design-stage).
