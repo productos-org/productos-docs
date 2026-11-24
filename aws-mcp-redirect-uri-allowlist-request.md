@@ -83,7 +83,7 @@ Reference: <https://docs.aws.amazon.com/agent-toolkit/latest/userguide/oauth-aut
 
 ## What ProductOS is
 
-An AI-native product-development platform. Its DevOps Engineer (built on Claude
+An AI-native product-development platform. Its Deployment Agent (built on Claude
 Code) provisions and operates AWS infrastructure on the user's behalf — Amplify
 Hosting, S3 + CloudFront, App Runner, ECS Fargate — from the user's own AWS
 account. The AWS MCP Server is the execution layer.

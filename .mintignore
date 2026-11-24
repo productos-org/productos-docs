@@ -5,3 +5,6 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Internal records, not docs pages
+aws-mcp-redirect-uri-allowlist-request.md
